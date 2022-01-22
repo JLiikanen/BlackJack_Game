@@ -8,6 +8,9 @@ class Dealer:
         else:
             return False
 
+    def clearHand(self):
+        self.hand.clear()
+
     def handValue(self):  # Tehokkuuden lisääminen! Esim. tee niin että parametriksi laitetaan kortit, ja uusi kortti
         # lisätään ilmentymän totaliin, sen sijaan että iteroidaan koko lista joka kerta.
         handContaisAce = False
